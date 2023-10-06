@@ -1,0 +1,91 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    flex: 1 1 100%;
+    color: white;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .uno {
+    background-color: rgb(126, 197, 197);
+    padding: 10px;
+
+  }
+  
+  .dos {
+    flex: 1 1 30%;
+    height: 500px;
+    background-color: rgb(6, 121, 121);
+    justify-content: center;
+    align-items: center;
+    line-height: 400px;
+  }
+  
+  .tres{
+    flex: 1 1 60%;
+    height: 500px;
+    background-color: rgb(121, 6, 104);
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+  }
+  
+  .cuatro {
+    flex: 1 1 100%;
+    background-color: rgb(126, 197, 197);
+    padding: 10px;
+  }
+  
+  body {
+    background-color: pink;
+  }
+  
+  .imgUno{
+    margin: 10px;
+    justify-content: space-around;
+
+  }
+
+  .imgDos{
+    margin: 10px;
+    justify-content: space-around;
+
+  }
+
+  .imgTres{
+    margin: 10px;
+    justify-content: space-around;
+
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 150px; /* Tamaño deseado para las imágenes */
+    height: 150px; /* Tamaño deseado para las imágenes */
+    background-color: grey; /* Color de fondo para las imágenes */
+    margin: 10px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 130px; 
+}

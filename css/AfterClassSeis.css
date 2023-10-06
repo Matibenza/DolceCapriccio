@@ -1,0 +1,56 @@
+.conteiner{
+display: grid;
+grid-template-columns: 200px auto;
+grid-template-rows: 75px auto;
+grid-template-areas: "head head"
+                    " aside main";
+max-width: 1400px;
+height: 100vh;
+margin: 0 auto;
+}
+
+.head{
+    grid-area: head;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 1rem;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-area: main;
+    gap: 1rem;
+    place-items: center;
+}
+
+.main div{
+    background-color: rgb(192, 189, 189);
+}
+
+.aside{
+    grid-area: aside;
+}
+
+input{
+    margin-left: 1.rem;
+}
+
+h4{
+    margin-top: 1rem;
+    margin-bottom:0.5rem;
+}
+
+hr{
+    margin-top: 1rem;
+}
+
+input{
+    margin-left: 1rem;
+}

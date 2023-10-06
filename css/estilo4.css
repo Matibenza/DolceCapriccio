@@ -1,0 +1,97 @@
+*{
+    margin: 5px;
+    padding: 0px;
+}
+
+.conteiner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 200px auto 80px;
+    grid-template-areas: "nav    nav    nav    nav"
+                        " header header header header"
+                        " main   main   main   aside";
+}
+
+.nav{
+    grid-area: nav;
+    background-color:rgb(173, 134, 141);
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav ul li{
+    padding: 20px;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+   
+}
+
+.header{
+    grid-area: header;
+    background-image: url("../assets/fondo1.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.header h1{
+    color: aliceblue;
+}
+
+.header p{
+    color: white;
+}
+
+.btn{
+    width: 100px;
+    background-color: rgba(255, 192, 203, 0.512);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+}
+
+.main{
+    grid-area: main;
+    background-color:rgb(173, 134, 141);
+    padding: 10px;
+}
+
+.main h2{
+    margin: 10px;
+}
+
+.card{
+    width: 420px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.card img{
+    width: 150px;
+}
+
+.cardInfo{
+    width: 240px;
+}
+.aside{
+    grid-area: aside;
+    background-color: pink;
+    padding: 10px;
+}
+
